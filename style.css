@@ -1,0 +1,224 @@
+.blog-showcase {
+  background: #fff;
+  width: 100%;
+  min-height: 1602px;
+  box-sizing: border-box;
+  padding: 64px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.blog-showcase__title {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 16px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.blog-showcase__title h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.blog-showcase__heading {
+  width: 100%;
+  height: 40px;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 110%;
+  letter-spacing: 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.blog-showcase__desc {
+  width: 100%;
+  height: 52px;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 130%;
+  letter-spacing: 0;
+  text-align: center;
+  color: #000;
+  margin: 0 auto 8px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.blog-showcase__btn {
+  width: 115px;
+  height: 26px;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 130%;
+  letter-spacing: 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #000;
+  border-radius: 0;
+  cursor: pointer;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, color 0.2s;
+  white-space: nowrap;
+  padding: 0;
+}
+
+.blog-showcase__btn:active,
+.blog-showcase__btn:focus {
+  background: none;
+  color: #000;
+  outline: none;
+  border-bottom: 1px solid #000;
+}
+
+.blog-showcase__frame {
+  width: 304px;
+  height: 1292px;
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  margin: 0 auto;
+}
+
+.blog-showcase__card {
+  width: 304px;
+  height: 388px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  background: none;
+}
+
+.blog-showcase__card-img-container {
+  position: relative;
+  width: 304px;
+  height: 304px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blog-showcase__card-img {
+  width: 304px;
+  height: 304px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: relative;
+  z-index: 2;
+  background: #e5e5e5;
+}
+
+.blog-showcase__card-corner {
+  position: absolute;
+  width: 135.11px;
+  height: 135.11px;
+  z-index: 1;
+}
+
+.blog-showcase__card-corner--tl {
+  width: 226.02px;
+  height: 213.69px;
+  top: -68px;
+  left: -97px;
+  transform: scaleX(-1);
+}
+
+.blog-showcase__card-corner--tr {
+  width: 196.53px;
+  height: 159.03px;
+  top: -20px;
+  right: -51px;
+  transform: rotate(111deg);
+  position: absolute;
+}
+
+.blog-showcase__card-corner--bl {
+  width: 196.53px;
+  height: 159.03px;
+  bottom: -51px;
+  left: -77px;
+  position: absolute;
+}
+
+.blog-showcase__card-corner--br {
+  width: 196.53px;
+  height: 159.03px;
+  bottom: -30px;
+  right: -53px;
+  position: absolute;
+}
+
+.blog-showcase__card-title {
+  width: 304px;
+  height: 52px;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 110%;
+  letter-spacing: 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+@media (min-width: 1200px) {
+  .blog-showcase {
+    width: 1440px;
+    height: 815px;
+    padding: 64px;
+    gap: 64px;
+    margin: 0 auto;
+  }
+  .blog-showcase__title {
+    width: 1312px;
+    height: 151px;
+    gap: 16px;
+    margin: 0 auto 0 auto;
+  }
+  .blog-showcase__frame {
+    width: 1312px;
+    height: 472px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 auto;
+    gap: 0;
+  }
+  .blog-showcase__card {
+    margin: 0;
+  }
+  .blog-showcase__card-title {
+    width: 100%;
+    max-width: 304px;
+  }
+}
